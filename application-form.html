@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" href="./styles.css"></link>
+        <h2>Hello!</h2>
+
+    </head>
+
+    <body>
+
+    <!-- your html goes here -->
+        <div class="introduction">
+        Thanks for your interest in our job opening.  We would 
+        like to know some more about you and some of your job
+        requirements.  
+        <br><br>
+            <div class="instructions">
+            Please fill out the fields below and 
+            then submit them to us.  Thanks!
+            </div>
+        </div>
+        <br>
+
+
+
+        <form action="/application" method="POST">
+            <label for="field-firstname">First Name</label>
+            <input class="yellow" type="text" name="firstname" id="field-firstname">
+            </input><br>
+
+            <label for="field-lastname">Last Name</label>
+            <input class="yellow" type="text" name="lastname" id="field-lastname">
+            </input><br>
+
+            <label for="field-salaryrequirement">What is your salary requirement?
+            </label>
+            <input class="yellow" type="text" name="salaryrequirement" id="field-salaryrequirement">
+            </input>
+            <br>
+
+            <label for="jobposition">Which job are you applying for?</label>
+            <select id="jobposition" name="jobposition">
+                <option value="softwareengineer">Software Engineer</option>
+                <option value="qaengineer">QA Engineer</option>
+                <option value="productmanager">Product Manager</option>
+            </select><br>
+
+            <input class="yellow" type="submit" name="submit" value="Submit"></input>
+
+        </form> 
+    </body>
+</html>
